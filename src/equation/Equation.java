@@ -31,7 +31,7 @@ public class Equation {
 	}
 
 	public void solveEcuation() throws Exception {
-		if (this._factors.size() != 3) {
+		if (this._factors.size() != 3 || this._factors.get(2).value == 0) {
 			throw new EquationOfDegree2Exception("The equation is not an equation of degree 2!");
 		}
 
